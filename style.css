@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  /* border: 3px solid red; */
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 220px;
+  position: absolute;
+  left: 20px;
+  top: 35px;
+}
+
+.nav-links {
+  padding: 3px 30px;
+}
+
+.nav-links ul {
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  /* margin: 0px 10px; */
+  display: inline-block;
+  padding: 8px 20px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* jo a tags k links hai uske niche ek red line aarhi hai uske liye niche wala after effect use kiya hai */
+
+.nav-links ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2.5px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  margin: 150px 300px;
+  align-items: center;
+  justify-content: center;
+  transition-property: color;
+}
+
+.text-box h1 {
+  font-size: 80px;
+  color: white;
+
+  font-family: "Times New Roman", Times, serif;
+}
+
+.text-box h1:hover {
+  color: burlywood;
+}
+
+.text-box p {
+  margin: 17px 0px;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.text-box a {
+  border: 1px solid white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  padding: 12px 35px;
+  color: white;
+  display: inline-block;
+  transition-property: all;
+  transition-duration: 1s;
+  position: relative;
+  margin: 7px 0px;
+  background: transparent;
+}
+
+.text-box a:hover {
+  background-color: rgb(255, 86, 86);
+  cursor: pointer;
+}
+
+/* @media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 33px;
+  } 
+
+   .text-box p
+{
+    font-size: 16px;
+}
+
+nav img
+{
+    width: 150px;
+
+}
+
+.text-box a
+{
+    width: 200px;
+    padding: 10px 40px;
+    margin: 5px 5px;
+    font-size: 20px;
+} 
+
+  .nav-links ul  {
+ position: absolute; 
+     display: flex;
+    flex-direction: column; 
+    align-items:center;
+     left: 0;
+    padding: 23px 23px;
+
+   } 
+
+  .nav-links {
+    position: absolute;
+
+    height: 100vh;
+    width: 200px;
+    right: 0;
+    top: 0;
+    background-color: red;
+    z-index: 2;
+  } 
+
+
+ }  */
+
+/* ---------courses section--------------- */
+
+.course {
+  width: 95vw;
+  /* padding: 70px; */
+  text-align: center;
+  margin: 60px auto;
+  font-weight: 600;
+  font-size: 50px;
+  height: 75vh;
+}
+
+.course p {
+  font-size: 20px;
+  margin: 3px 0px;
+  /* font-weight: normal; */
+  font-weight: 100;
+  padding: 10px;
+}
+
+.rowsection {
+  /* border: 3px solid blueviolet; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  /* border: 2px solid red; */
+  padding: 20px;
+
+  /* width: 300px; */
+  height: 900px;
+}
+
+.col h1 {
+  font-size: 50px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.col p {
+  /* border: 1px solid black; */
+
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+
+  font-size: 18px;
+}
+
+.col {
+  margin: 15px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgb(233, 235, 235);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.col:hover
+{
+    /* background-color: rgb(255, 215, 162); */
+    
+    box-shadow: 2px 2px 1.5px 1.5px green;
+    
+   
+
+} 
+
+/* -----> Our campus section <---------------- */
+
+.campus
+{
+    margin: auto;
+    text-align: center;
+    font-size: 44px;
+}
+
+.capmustour p
+{
+    margin-top: 8px; ;
+    font-size: 20px;
+}
+
+.campusrow2
+{
+    display:flex;
+}
+
+.row2 img
+{
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
+    height: 600px;
+}
+
+.row2
+{
+    flex-basis: 32%;
+    position: relative;
+    overflow: hidden;
+}
+.london 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*background-color: red;
+    */transition-property:all;
+    transition-duration: 1s;
+   
+}
+
+
+
+.london h2
+
+{
+     
+    position: absolute;
+    top: 80px;
+    left: 190px;
+    font-size: 40px;
+}
+
+/* ----------Facilities Section---------- */
+
+.facilities
+{
+  /* margin: auto; */
+  text-align: center;
+margin: auto;
+  padding-top: 100px;
+
+  /* border: 2px solid red; */
+  width: 80%;
+  height: 100%;
+}
+
+.facilities h1
+{
+
+  font-size: 75px;
+  
+}
+
+.facilities p
+{
+  font-size: 18px;
+}
+
+.facirowheader
+{
+  display: flex;
+  /* border: 3px solid black; */
+  /* padding: 23px 45px; */
+  align-items: center;
+  justify-content: center;
+/* margin-left: 200px;
+margin-right: 200px; */
+padding-top: 80px;
+}
+
+.facirow img
+{
+  /*margin: 0px 3px;
+  */height: 400px;
+  width: 400px;
+  transition-property: all;
+  transition-duration: 1s;
+  padding: 0px 35px;
+  border-radius:20px;
+ 
+}
+
+.facirow img:hover
+{
+  
+  box-shadow: 2px 2px 1.5px 1.5px green;
+
+
+}
+
+.facirow
+{
+
+  display: flex;
+  flex-direction: column;
+
+
+ 
+}
+
+.facirow h1
+{
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.facirow p
+{
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+
+/* ------   testimonials section------------- */
+
+.testimonials
+{
+  text-align: center;
+  /* border: 3px solid red; */
+  height: 100%;
+margin: auto;
+  width: 80vw;
+  padding-top: 90px;
+
+  
+}
+
+.testimonials h1
+{
+  font-size: 69px;
+  text-align: center;
+}
+.testimonials p
+{
+  font-size: 17px;
+  text-align: center;
+}
+
+.testimonials-col-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* border: 3px solid red; */
+  padding-top:90px;
+}
+
+.testimonials-col
+{
+  /* border: 3px solid blueviolet; */
+  padding: 50px 43px;
+  background-color: rgb(255, 247, 238);
+  margin: 0px 20px;
+  transition-property: all;
+  transition-duration: 1s;
+  
+}
+
+.testimonials-col:hover
+{
+  box-shadow: 2px 2px 1.5px 1.5px  rgb(255, 181, 96);
+
+}
+
+.testimonials img
+{
+  width:150px;
+  height:150px;
+  border-radius: 75px;
+  
+}
+
+.testimonials-col p
+{
+  text-align: center;
+}
+
+.testimonials-col h1
+{
+  font-size: 45px;
+}
+
+
+/* last section contact us section */
+
+.contactus
+{
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(banner2.jpg);
+  padding: 100px;
+  width: 80%;
+  margin: 90px auto;
+  text-align: center;
+
+  height: 45vh;
+ 
+
+}
+
+.contactus h1{
+  font-size: 80px;
+  color: white;
+}
+
+.aclass a
+{
+  position: absolute;
+ /* margin-top: 100px; */
+ border: 3px solid white;
+  padding: 20px 80px;
+  text-decoration: none;
+  color: white;
+  left: 630px;
+  /* top: 100px; */
+  margin-top:40px;
+  transition-property: all;
+  transition-duration: 1s;
+  font-size: 25px;
+}
+
+.aclass a:hover
+{color: black;
+  background-color: rgb(162, 255, 255);
+}
+
+
+/*    about us section */
+
+.footer
+{
+  /* border: 3px solid red; */
+padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  width: 80vw;
+  margin: auto;
+  font-weight: 700;
+}
+.footer p 
+{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+  padding: 20px 0px;
+}
+.footer h1
+{
+  margin-top: 10px;
+}
+
+.footer strong
+{
+  font-size: 15px;
+}
